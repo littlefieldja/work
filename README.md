@@ -1,5 +1,5 @@
 #Simple Markdown and other notes
-
+new
 
 ####Setting up a new git connection
 - git clone http://github.com/littlefieldja/"repo name"
