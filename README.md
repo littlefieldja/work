@@ -70,8 +70,4 @@
 	markdown = Redcarpet.new("Hello World!")
 	puts markdown.to_html
 ```
-
-####Here are some mods made on my mac! 
-Have made a change can you see it? 
- 
  
