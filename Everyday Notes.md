@@ -35,33 +35,6 @@ What i send
 
 ```
 
-```java
-
-public List<Certification> listAllByEsiCertId(String certificationId) throws SQLException{ 
-		conn = getConnection();
-		if(!certificationId.contains("*")){
-			certificationId += "*";
-		}
-		certificationId = certificationId.replace('*', '%').toUpperCase();
-		List<Certification> certList = new ArrayList<Certification>();
-		try{
-			ps = conn.prepareStatement(LIST_BY_ESI_CERT_ID);
-			int i = 1; 
-			ps.setString(i++, certificationId);
-			rs = ps.executeQuery(); 
-			while(rs.next()){
-				Certification certification = new Certification();
-				certification.setCertificationId(rs.getString(CERTIFICATION_ID));
-				certification.setCertificationDsc(rs.getString(CERTIFICATION_DSC));
-				certList.add(certification);
-			}
-				}finally{
-			releaseAll();			
-		}return certList;	
-	}
-```
-
-
 ##Scatch pad for Wednesday
 #####no data for test 
 	ALL NEED THIS 	
@@ -75,4 +48,11 @@ public List<Certification> listAllByEsiCertId(String certificationId) throws SQL
 ##Thursdays Scratch Pad
 --------------------------------------------------------
 	Use Cert id 846
+	
+	
+	saba certID = crtfy000000000018296
+	saba certName = CRC Bead/Blast Monitor (OJT)
+	
+	ESIID = 68
+	ESI CERTIFICARION_DSC = CRC Bead/Blast Monitor
 		
