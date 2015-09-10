@@ -71,13 +71,8 @@ public List<Certification> listAllByEsiCertId(String certificationId) throws SQL
 	- add revenue service to test and only test 
 		
 		
-```C++
-	
-	arr[0] = 12; 
-	arr[1] = 42;
-	
-	
- 	
-```
-	
+--------------------------------------------------------
+Thursdays Scratch Pad
+--------------------------------------------------------
+	Use Cert id 846
 		
